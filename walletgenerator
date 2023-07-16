@@ -11,7 +11,7 @@ def generate_address(private_key):
     # Remove the "0x" prefix if present
     private_key = private_key.replace('0x', '')
 
-    # Generate public key from private key
+    # Generate public key from private key:
     public_key = utils.privtoaddr(private_key).hex()
 
     # Generate Ethereum address from public key
